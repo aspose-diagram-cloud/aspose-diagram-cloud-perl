@@ -25,6 +25,7 @@ use utf8;
 use Exporter;
 use Carp qw( croak );
 use Log::Any qw($log);
+#use File::Slurp;
 
 use AsposeDiagramCloud::OAuthApi ;
 use AsposeDiagramCloud::Configuration ;
@@ -36,22 +37,26 @@ use AsposeDiagramCloud::Object::SaaSposeResponse ;
 # }
 our $new_client = undef;
 
-sub get_client
+my $grant_type = 'client_credentials'; # replace NULL with a proper value
+my $client_id = 'yourClientId'; # replace NULL with a proper value
+my $client_secret =  'yourClientSecret'; # replace NULL with a proper value
+
+sub get_diagram_api
 {
     my ($self, %args) = @_;
-    my $config = AsposeDiagramCloud::Configuration->new('base_url' => 'https://api.aspose.cloud/');
+    my $config = AsposeDiagramCloud::Configuration->new('base_url' => 'https://api.aspose.cloud','api_version' => 'v3.0', app_sid => $client_id, app_key => $client_secret);
     my $client = AsposeDiagramCloud::ApiClient->new( $config);
-    my $oauth_api = AsposeDiagramCloud::OAuthApi->new($client);
+    my $diagram_api = AsposeDiagramCloud::DiagramApi->new($client);
+    return $diagram_api;
+}
 
-    my $grant_type = 'client_credentials'; # replace NULL with a proper value
-    my $client_id = 'xxxxxxxx'; # replace NULL with a proper value
-    my $client_secret =  'xxxxxxxxxx'; # replace NULL with a proper value
-    my $result = $oauth_api->o_auth_post(grant_type => $grant_type, client_id => $client_id, client_secret => $client_secret);
-    my $access_token  = $result->access_token;
-
-    my $new_config = AsposeDiagramCloud::Configuration->new('access_token' =>  $access_token, 'base_url' => 'https://api.aspose.cloud/v1.1');
-    $new_client = AsposeDiagramCloud::ApiClient->new( $new_config);
-    return $new_client;
+sub get_storage_api
+{
+    my ($self, %args) = @_;
+    my $config = AsposeDiagramCloud::Configuration->new('base_url' => 'https://api.aspose.cloud','api_version' => 'v3.0', app_sid => $client_id, app_key => $client_secret);
+    my $client = AsposeDiagramCloud::ApiClient->new( $config);
+    my $diagram_api = AsposeDiagramCloud::StorageApi->new($client);
+    return $diagram_api;
 }
 
 1;

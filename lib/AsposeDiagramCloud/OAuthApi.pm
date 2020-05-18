@@ -82,7 +82,7 @@ sub new {
 }
 # @return AccessTokenResponse
 #
-sub o_auth_post {
+sub o_auth_post2 {
     my ($self, %args) = @_;
 
     # verify the required parameter 'grant_type' is set
@@ -101,7 +101,7 @@ sub o_auth_post {
     }
 
     # parse inputs
-    my $_resource_path = '/oauth2/token';
+    my $_resource_path = '/connect/token';
 
     my $_method = 'POST';
     my $query_params = {};
@@ -119,17 +119,18 @@ sub o_auth_post {
     if ( exists $args{'grant_type'} ) {
                 $form_params->{'grant_type'} = $self->{api_client}->to_form_value($args{'grant_type'});
     }
-    
+
     # form params
     if ( exists $args{'client_id'} ) {
                 $form_params->{'client_id'} = $self->{api_client}->to_form_value($args{'client_id'});
     }
-    
+
     # form params
     if ( exists $args{'client_secret'} ) {
                 $form_params->{'client_secret'} = $self->{api_client}->to_form_value($args{'client_secret'});
     }
-    
+
+    $self->{api_client}->check_access_token();
     my $_body_data;
     # authentication setting, if any
     my $auth_settings = [qw()];
