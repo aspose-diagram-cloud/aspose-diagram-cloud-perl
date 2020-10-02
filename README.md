@@ -21,7 +21,7 @@ This cloud SDK enables your Perl cloud apps to [create & process Visio diagrams]
   - Line
   - Ellipse
 
-For the detailed notes, please visit [Aspose.Diagram Cloud 20.3 Release Notes](https://docs.aspose.cloud/display/diagramcloud/Aspose.Diagram+Cloud+20.3+Release+Notes).
+For the detailed notes, please visit [Aspose.Diagram Cloud 20.3 Release Notes](https://docs.aspose.cloud/diagram/aspose-diagram-cloud-20-3-release-notes/).
 
 ## Read & Write Visio Formats
 
@@ -179,4 +179,4 @@ if ($@) {
 }
 ```
 
-[Product Page](https://products.aspose.cloud/diagram/perl) | [Documentation](https://docs.aspose.cloud/display/diagramcloud/Home) | [Demo](https://products.aspose.app/diagram/family) | [API Reference](https://apireference.aspose.cloud/diagram/) | [Examples](https://github.com/aspose-diagram-cloud/aspose-diagram-cloud-perl) | [Blog](https://blog.aspose.cloud/category/diagram/) | [Free Support](https://forum.aspose.cloud/c/diagram) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
+[Product Page](https://products.aspose.cloud/diagram/perl) | [Documentation](https://docs.aspose.cloud/diagram/) | [Demo](https://products.aspose.app/diagram/family) | [API Reference](https://apireference.aspose.cloud/diagram/) | [Examples](https://github.com/aspose-diagram-cloud/aspose-diagram-cloud-perl) | [Blog](https://blog.aspose.cloud/category/diagram/) | [Free Support](https://forum.aspose.cloud/c/diagram) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
