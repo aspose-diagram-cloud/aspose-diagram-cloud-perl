@@ -4,7 +4,7 @@
 
 Cloud SDK enables your Perl cloud apps to [Create & Convert Visio Diagrams](https://products.aspose.cloud/diagram/perl) from within your own apps without installing Microsoft Visio.
 
-## Aspose.Drawing REST API for Drawings
+## Aspose.Diagram REST API
 
 - Programmatically create a new Microsoft Visio diagram file.
 - Convert Visio flow-charts to other supported formats.
