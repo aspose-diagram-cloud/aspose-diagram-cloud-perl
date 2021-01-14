@@ -1,29 +1,17 @@
-![](https://img.shields.io/badge/api-v3.0-lightgrey) ![CPAN](https://img.shields.io/cpan/v/AsposeDiagramCloud-DiagramApi) [![GitHub license](https://img.shields.io/github/license/aspose-diagram-cloud/aspose-Diagram-cloud-perl)](https://github.com/aspose-diagram-cloud/aspose-Diagram-cloud-perl/blob/master/LICENSE) ![GitHub last commit](https://img.shields.io/github/last-commit/Aspose-Diagram-Cloud/aspose-diagram-cloud-perl) 
+![](https://img.shields.io/badge/api-v3.0-lightgrey) ![CPAN](https://img.shields.io/cpan/v/AsposeDiagramCloud-DiagramApi) [![GitHub license](https://img.shields.io/github/license/aspose-diagram-cloud/aspose-Diagram-cloud-perl)](https://github.com/aspose-diagram-cloud/aspose-Diagram-cloud-perl/blob/master/LICENSE) ![GitHub last commit](https://img.shields.io/github/last-commit/Aspose-Diagram-Cloud/aspose-diagram-cloud-perl)
 
-# Perl SDK to Process Visio® Files in the Cloud
+# Perl Cloud REST API for Visio Processing
 
 Cloud SDK enables your Perl cloud apps to [Create & Convert Visio Diagrams](https://products.aspose.cloud/diagram/perl) from within your own apps without installing Microsoft Visio.
 
-## Aspose.Diagram REST API
+## Visio Processing Features
 
+- [Convert diagrams](https://docs.aspose.cloud/diagram/convert-diagram-file-to-another-format/) to 20+ different file formats.
+- Retrieve document information of a Visio diagram.
 - Programmatically create a new Microsoft Visio diagram file.
 - Convert Visio flow-charts to other supported formats.
-- Render Visio files to raster images, fixed-layout and HTML formats.
-- Upload your business oriented Visio diagrams to cloud storage.
-- Retrieve document information of a Visio diagram.
-
-## New Features in Version 20.3
-
-- Added support to:
-  - Set page settings
-  - Add an empty page
-  - Get pages information
-- Added support to draw following objects on a page:
-  - Polyline
-  - Line
-  - Ellipse
-
-For the detailed notes, please visit [Aspose.Diagram Cloud 20.3 Release Notes](https://docs.aspose.cloud/diagram/aspose-diagram-cloud-20-3-release-notes/).
+- Upload your business-oriented Visio diagrams to cloud storage.
+- Export Visio files to raster images, fixed-layout, and HTML formats.
 
 ## Read & Write Visio Formats
 
@@ -40,6 +28,20 @@ For the detailed notes, please visit [Aspose.Diagram Cloud 20.3 Release Notes](h
 
 **Microsoft Visio:** VDW, VSD, VSS, VST
 
+
+
+## New Features in Version 20.3
+
+- Added support to:
+  - Set page settings
+  - Add an empty page
+  - Get pages information
+- Added support to draw following objects on a page:
+  - Polyline
+  - Line
+  - Ellipse
+
+For the detailed notes, please visit [Aspose.Diagram Cloud 20.3 Release Notes](https://docs.aspose.cloud/diagram/aspose-diagram-cloud-20-3-release-notes/).
 ## Synopsis
 
 The Perl Swagger Codegen project builds a library of Perl modules to interact with a web service defined by a OpenAPI Specification. See below for how to build the library.
