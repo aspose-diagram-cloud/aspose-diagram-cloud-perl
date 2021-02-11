@@ -139,48 +139,17 @@ use AsposeDiagramCloud::Object::DiagramResponse;
 use AsposeDiagramCloud::Object::SaveResponse;
 ```
 
-## Get Started with Aspose.Diagram Cloud
 
-Put the Perl SDK under the 'lib' folder in your project directory, then run the following
+## Create New VDX Diagram in Perl
 
 ```perl
-#!/usr/bin/perl
-use lib 'lib';
-use strict;
-use warnings;
-# load the API package
-use AsposeDiagramCloud::DiagramFileApi;
-use AsposeDiagramCloud::OAuthApi;
-
-# load the models
-use AsposeDiagramCloud::Object::DiagramModel;
-use AsposeDiagramCloud::Object::Link;
-use AsposeDiagramCloud::Object::PageModel;
-use AsposeDiagramCloud::Object::SaaSposeResponse;
-use AsposeDiagramCloud::Object::SaveResult;
-use AsposeDiagramCloud::Object::SharpModel;
-use AsposeDiagramCloud::Object::DiagramResponse;
-use AsposeDiagramCloud::Object::SaveResponse;
-
-# for displaying the API response data
-use Data::Dumper;
-use AsposeDiagramCloud::;
-
-my $api_instance = AsposeDiagramCloud::->new(
-);
-
-my $name = 'name_example'; # string | The document name.
-my $format = 'format_example'; # string | The exported file format.
-my $folder = 'folder_example'; # string | The document folder.
-my $storage = 'storage_example'; # string | storage name.
-
-eval {
-    my $result = $api_instance->diagram_file_get_diagram(name => $name, format => $format, folder => $folder, storage => $storage);
-    print Dumper($result);
-};
-if ($@) {
-    warn "Exception when calling DiagramFileApi->diagram_file_get_diagram: $@\n";
-}
+	# Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
+    my $config = AsposeDiagramCloud::Configuration->new(app_sid => 'MY_CLIENT_ID', app_key => 'MY_CLIENT_SECRET');
+    my $client = AsposeDiagramCloud::ApiClient->new( $config);
+    
+	my $diagram_api = AsposeDiagramCloud::DiagramApi->new($client);
+	
+	my $result = $diagram_api->diagram_name_put(name => 'sample.vdx', folder => 'output', is_overwrite => 'true', storage => 'My_Storage_Name');
 ```
 ## Aspose.Diagram Cloud SDKs in Popular Languages
 
